@@ -1,0 +1,77 @@
+
+
+<!-- 
+<div>
+    <h1 class="header-title">AI-DRIVEN RAG FUSION FOR DATA SUMMARIZATION</h1>
+  
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input" />
+      <button class="search-button">
+        <i class="fas fa-search"></i> 
+      </button>
+    </div>
+  
+    <p>
+      <button class="button go-to-benchmarking-button" (click)="navigateToBenchmarking()" >Go to Benchmarking Page</button>
+    </p>
+  
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <select>
+          <option value="" disabled selected>Select a Fusion</option>
+          <option value="fusion1">Merge Fusion</option>
+          <option value="fusion2">Score Fusion</option>
+          
+        </select>
+        <i class="fas fa-chevron-down dropdown-icon"></i> 
+      </div>
+    </div>
+    <div class="summary-container">
+      <h2 class="summary-title">Summary Title</h2>
+      <p class="summary-text">
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+        This is a brief summary of the content. It should be concise and informative, providing a quick overview of the main points.
+      </p>
+    </div>
+    
+    
+  </div>
+  
+ -->
+ <div>
+  <h1 class="header-title">AI-DRIVEN RAG FUSION FOR DATA SUMMARIZATION</h1>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search..." class="search-input" [(ngModel)]="query" />
+    <button class="search-button" (click)="onSearch()">
+      <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+    </button>
+  </div>
+
+  <p>
+    <button class="button go-to-benchmarking-button" (click)="navigateToBenchmarking()">Go to Benchmarking Page</button>
+  </p>
+
+  <div class="dropdown-container">
+    <div class="dropdown">
+      <select>
+        <option value="" disabled selected>Select a Fusion</option>
+        <option value="fusion1">Merge Fusion</option>
+        <option value="fusion2">Score Fusion</option>
+      </select>
+      <i class="fas fa-chevron-down dropdown-icon"></i> <!-- Font Awesome dropdown icon -->
+    </div>
+  </div>
+
+  <div class="summary-container">
+    <h2 class="summary-title">Summary Title</h2>
+    <p class="summary-text">
+      {{ summary }}
+    </p>
+  </div>
+</div>
